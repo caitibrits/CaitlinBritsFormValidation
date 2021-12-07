@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Validation Challenge</title>
+  <link rel="stylesheet" type="text/css" href="/formValidation.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>Registration Form</h1>
+  </header>
+  <form action="" method="get" class="form-example">
+    <div>
+      <label for="user-name">User ID:</label>
+      <input type="text" name="user-name" id="user-name" minlength="4" placeholder="Example" required>
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" placeholder="8 characters minimum" required>
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Ex: John" required>
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label for="name">Address:</label>
+      <input type="text" name="address" id="address" placeholder="Optional*">
+    </div>
+    <br>
+    <div>
+      <label>Country:</label>
+      <select>
+        <option placeholder="Select Country" value="">Select Country</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Germany">Germany</option>
+        <option value="UK">UK</option>
+      </select>
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label>ZIP Code:</label>
+      <input type="number" name="zipCode" id="zipCode" placeholder="Numeric only" required="Required">
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="Ex: mynameisjohn@hotmail.com" required="Required">
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label> Sex:</label>
+      <input type="radio" name="male" /> Male <input type="radio" name="female" /> Female
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <div>
+      <label> Language:</label>
+      <input type="radio" name="male" /> English
+      <input type="radio" name="female" /> Afrikaans
+      <span class="error">Required*</span>
+    </div>
+    <br>
+    <label>About:</label>
+    <div>
+      <br>
+      <textarea cols="50" rows="5" value="About" placeholder="Optional*"></textarea>
+    </div>
+    <br>
+    <div>
+      <button type="submit" class="submit">Submit</button>
+    </div>
+  </form>
+</body>

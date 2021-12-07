@@ -1,0 +1,25 @@
+body {
+    align-content: space-evenly;
+}
+
+.label {
+    position: relative;
+    margin: 40px 0px;
+    float: left;
+}
+
+input::placeholder {
+    color: rgb(151, 117, 117);
+}
+
+.error {
+    color: rgb(250, 0, 0);
+}
+
+.submit {
+    margin-left: 160px;
+    font-weight: bold;
+    border-color: aquamarine;
+}
+
+
